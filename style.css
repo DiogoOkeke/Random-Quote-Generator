@@ -1,0 +1,120 @@
+body, html{
+ height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top left, #4C0033, #790252, #AF0171, #E80F88);
+    transition: all .5s ease;
+}
+
+section div{
+ width: 100vw;
+}
+
+section h4{
+ font-size: 2rem;
+ letter-spacing: 14px;
+ font-family: 'Lobster', Arial, Helvetica, sans-serif;
+ color: whitesmoke;
+}
+
+section h3:first-child{
+ text-align: left;
+ font-size: 4rem;
+ margin: 0;
+ padding: 0;
+ padding-left: 5vw;
+ color: white;
+ font-family: 'Lobster';
+}
+
+section h3:nth-child(4){
+ text-align: right;
+ font-size: 4rem;
+ margin: 0;
+ padding: 0;
+ padding-right: 5vw;
+ color: white;
+ font-family: 'Lobster';
+}
+
+section h5{
+ margin: 0;
+ margin-block: 6vw;
+ font-size: 1rem;
+ line-height: 8vw;
+ padding: 5px 25px 5px 25px;
+ color: white;
+}
+
+section h3::selection, section h4::selection,  section h5::selection, section h6::selection,  section button::selection {
+ color: #E80F88;
+}
+
+section h6{
+ font-size: .9rem;
+ letter-spacing: 2px;
+ margin: 0;
+ margin-block: 5vw;
+ color: white;
+}
+
+section button{
+ height: 30vw;
+ width: 30vw;
+ border-radius: 50%;
+ font-size: 1.1rem;
+ font-weight: bold;
+ font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+ line-height: 7vw;
+ outline: none;
+ border: none;
+ box-shadow: 4px 6px 7px black;
+ background: linear-gradient(#E80F88, #AF0171, #790252, #4C0033);
+ color: white;
+ letter-spacing: 2px;
+}
+
+section button:hover{
+ transform: scale(.8);
+}
+
+
+/* Media Queries */
+
+@media (min-width: 840px){
+ 
+ section h4{
+  font-size: 9vw;
+  letter-spacing: 9px;
+ }
+ 
+ section h5{
+  font-size: 4vw;
+ }
+ 
+ section h6{
+  font-size: 3vw;
+ }
+ 
+section h3:first-child, section h3:nth-child(4){
+  font-size: 15vw;
+ }
+ 
+ section button{
+  height: 28vw;
+  width: 28vw;
+  box-shadow: 6px 5px 7px black;
+  cursor: pointer;
+  font-size: 2.5rem;
+  line-height: 6vw;
+ }
+ 
+}
